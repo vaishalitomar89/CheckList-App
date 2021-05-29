@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import FirstComponent ,{SecondComponent} from './components/examples/FirstComponent';
+import Counter from './components/Counter/Counter';
 import logo from './logo.svg';
 import './App.css';
  
@@ -10,7 +11,7 @@ class App extends Component {
         <header className="App-header">
           CheckList-Your Go to app
           <img src={logo} className="App-logo" alt="logo" />
-          <LearningComponent></LearningComponent>
+          <Counter></Counter>
         </header>
       </div>
     );
