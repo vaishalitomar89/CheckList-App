@@ -1,0 +1,15 @@
+tools:
+  jdk: - 1.8
+  maven: - 3.3.9
+  
+triggers:
+  push: disabled 
+  pr: disabled cron: spec: 30 01 * * * call: default
+  
+envs:
+  global: variables: testEnvironment: ${env}
+  
+flows:
+  default: 
+    try:
+       - mvn clean
